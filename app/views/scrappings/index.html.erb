@@ -1,0 +1,23 @@
+<h1>Listing scrappings</h1>
+
+<table>
+  <tr>
+    <th>Url</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @scrappings.each do |scrapping| %>
+  <tr>
+    <td><%= scrapping.url %></td>
+    <td><%= link_to 'Show', scrapping %></td>
+    <td><%= link_to 'Edit', edit_scrapping_path(scrapping) %></td>
+    <td><%= link_to 'Destroy', scrapping, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Scrapping', new_scrapping_path %>

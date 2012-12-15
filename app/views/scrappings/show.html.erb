@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Url:</b>
+  <%= @scrapping.url %>
+</p>
+
+<div>
+	<span><%= "#{@provider_url} #{@e_provider_url}" %></span>
+</div>
+
+<div>
+	<span><%= "#{@provider_name} #{@e_provider_name}" %></span>
+</div>
+<div>
+	<span><%= "#{@type} #{@e_type}" %></span>
+</div>
+<div>
+	<span><%= "#{@title} #{@e_title}" %></span>
+</div>
+<div>
+	<span><%= "#{@description} #{@e_description}" %></span>
+</div>
+<div>
+	<span><%= "#{@url} #{@e_url}" %></span>
+</div>
+<div>
+	<span><%= "#{@widht} #{@e_widht}" %></span>
+</div>
+<div>
+	<span><%= "#{@height} #{@e_height}" %></span>
+</div>
+<div>
+	<span><%= "#{@html} #{@e_html}" %></span>
+</div>
+
+<div>
+	<span><%= "#{@thumbnail} #{@e_thumbnail}" %></span>
+	<span><%= image_tag("#{@e_thumbnail_url}")%></span>
+</div>
+<div>
+	<span><%= "#{@thumbnail_url} #{@e_thumbnail_url}" %></span>
+</div>
+<div>
+	<span><%= "#{@thumbnail_width} #{@e_thumbnail_width}" %></span>
+</div>
+<div>
+	<span><%= "#{@thumbnail_height} #{@e_thumbnail_height}" %></span>
+</div>
+<div>
+	<span><%= "#{@author} #{@e_author}" %></span>
+</div>
+<div>
+	<span><%= "#{@author_url} #{@e_author_url}" %></span>
+</div>
+
+
+<%= link_to 'Edit', edit_scrapping_path(@scrapping) %> |
+<%= link_to 'Back', scrappings_path %>
