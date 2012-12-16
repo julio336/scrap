@@ -55,5 +55,12 @@
 </div>
 
 
+<%= form_for @scrapping, url: fly_scrapping_path(@scrapping), remote: true do |f| %>
+	<%= f.text_field :url %>
+	<%= f.submit "scrap" %>
+<% end %>
+
+<div id="preview"></div>
+
 <%= link_to 'Edit', edit_scrapping_path(@scrapping) %> |
 <%= link_to 'Back', scrappings_path %>

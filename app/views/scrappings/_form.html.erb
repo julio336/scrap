@@ -1,6 +1,6 @@
-<%= form_for(@scrapping) do |f| %>
+<% form_for @scrapping do |f| %>
   <% if @scrapping.errors.any? %>
-    <div id="error_explanation">
+    <div id="error_explanation">	
       <h2><%= pluralize(@scrapping.errors.count, "error") %> prohibited this scrapping from being saved:</h2>
 
       <ul>
