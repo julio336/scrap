@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+<!--
   <b>Url:</b>
   <%= @scrapping.url %>
 </p>
@@ -53,7 +54,7 @@
 <div>
 	<span><%= "#{@author_url} #{@e_author_url}" %></span>
 </div>
-
+ -->
 
 <%= form_for @scrapping, url: fly_scrapping_path(@scrapping), remote: true do |f| %>
 	<%= f.text_field :url %>
